@@ -23,6 +23,13 @@ public class CameraFollow : MonoBehaviour
         else
             return false;
     }
+    bool MoveY()
+    {
+        if (Mathf.Abs(Hero.position.y - transform.position.y) > YDistance)
+            return true;
+        else
+            return false;
+    }
     void FollowHero()
     {
         float newX = transform.position.x;
@@ -31,6 +38,10 @@ public class CameraFollow : MonoBehaviour
             newX = Mathf.Lerp(transform.position.x, Hero.position.x,
                 XSmooth * Time.deltaTime);
         newX = Mathf.Clamp(newX, MinXandY.x, MaxXandY.x);
+        if (MoveY())
+            newY = Mathf.Lerp(transform.position.y, Hero.position.y,
+                YSmooth * Time.deltaTime);
+        newY = Mathf.Clamp(newY, MinXandY.y, MaxXandY.y);
         transform.position = new Vector3(newX, newY,transform.position.z);
     }
     // Update is called once per frame
