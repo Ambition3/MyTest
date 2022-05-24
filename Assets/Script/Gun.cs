@@ -28,7 +28,7 @@ public class Gun : MonoBehaviour
             {
                 GameObject bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(0, 0, 180));
                 Rigidbody2D bi = bulletInstance.GetComponent<Rigidbody2D>();
-                bi.velocity = new Vector2(-speed, 0);//x方向速度为speed,y方向速度为0
+                bi.velocity = new Vector2(-speed, 0);//x方向速度为-speed,y方向速度为0
             }
         }
         

@@ -622,8 +622,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7639566746599676841}
   - component: {fileID: 7639566746599676839}
-  - component: {fileID: 7639566746599676840}
-  - component: {fileID: 7639566746599676838}
   m_Layer: 8
   m_Name: env_PlatformTop_0 (1)
   m_TagString: Untagged
@@ -696,51 +694,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7639566746599676840
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7639566746599676842}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.69, y: 1.48}
-    newSize: {x: 4.69, y: 1.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.3, y: 1.25}
-  m_EdgeRadius: 0
---- !u!68 &7639566746599676838
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7639566746599676842}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 814083d1683000447a9e59d01f77d949, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 1.9646531, y: -0.64006436}
-  - {x: 2.0859551, y: -0.0574414}
-  - {x: 1.9916012, y: 0.5113003}
 --- !u!1 &7639566746742590994
 GameObject:
   m_ObjectHideFlags: 0

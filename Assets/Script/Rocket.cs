@@ -20,9 +20,15 @@ public class Rocket : MonoBehaviour
     {
         if(collision.gameObject.tag != "Player")
         {
+           // Debug.Log(collision.gameObject.tag);
+          //  Debug.Log(collision.gameObject);
             float rotation = Random.Range(0, 360);
             Instantiate(explosion,transform.position, Quaternion.Euler(0, 0, rotation));
             Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<Enemy>().Hurt();
         }
     }
 }
