@@ -59,8 +59,8 @@ public class PlayerHealth : MonoBehaviour
         //anim.SetTrigger("Die");
 
         //销毁血条
-        GameObject go = GameObject.Find("UI_HealthBar");
-        Destroy(go);
+        //GameObject go = GameObject.Find("UI_HealthBar");
+        //Destroy(go);
     }
     void TakeDamage(Transform enemy)
     {
@@ -71,6 +71,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             death();
+            anim.SetTrigger("Die");
             // return;
         }
 
